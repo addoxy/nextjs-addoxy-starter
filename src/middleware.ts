@@ -12,11 +12,6 @@ export async function middleware(request: NextRequest) {
     }
   });
 
-  if (path === "/sign-in" && signInToken) {
-    url.pathname = "/";
-    return NextResponse.redirect(url.href);
-  }
-
   if (path !== "/sign-in" && !signInToken) {
     url.pathname = "/sign-in";
     return NextResponse.redirect(url.href);
