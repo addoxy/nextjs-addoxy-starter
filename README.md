@@ -8,3 +8,12 @@
 - Prettier - code formatter (with plugins for an even better experience)
 - Prisma - next generation ORM
 - NextAuth - complete authentication
+
+### Getting started:
+```
+git clone https://github.com/addoxy/nextjs-addoxy-starter.git
+```
+then
+```
+pnpm install
+```
