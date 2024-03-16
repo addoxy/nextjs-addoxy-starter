@@ -25,7 +25,8 @@ export default function RootLayout({
       <body
         className={cn(
           'bg-zinc-950 text-sm text-zinc-50 antialiased',
-          inter.className
+          inter.className,
+          process.env.NODE_ENV === 'development' && 'debug-screens'
         )}
       >
         <PageWrapper>{children}</PageWrapper>
